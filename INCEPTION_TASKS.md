@@ -1,7 +1,5 @@
 # 42 Inception: Mandatory Tasks Checklist
 
-Use this checklist to track your progress while learning Docker and completing the mandatory requirements of the 42 Inception project. The tasks are grouped into logical sections so you can work step by step.
-
 ## General Setup
 
 - [ ] Work inside a **Virtual Machine**.
@@ -90,5 +88,3 @@ Your project should look similar to this (adapt paths to your login):
             ├── .dockerignore
             └── conf/
 ```
-
-Use this checklist to verify each step as you work through the project. Happy Dockering!
