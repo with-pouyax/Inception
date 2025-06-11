@@ -15,17 +15,18 @@ Use this checklist to track your progress while learning Docker and completing t
 - [ ] **One Dockerfile per service** – build the images yourself instead of pulling pre-made ones (only base Alpine/Debian images allowed).
 - [ ] Name each Docker image **exactly the same** as its service.
 - [ ] Base every image on the **penultimate stable version** of Alpine or Debian.
-- [ ] The Makefile must **build these images** and call them from `docker-compose.yml`.
+- [ ] The Makefile must call `docker-compose`, which then builds images from your Dockerfiles.
 - [ ] Do not use the `latest` tag when specifying images.
 
 ## Service Containers
-
+- [ ] Each service must run in its **own dedicated container** (no combining services in one).
 - [ ] **NGINX** container: must run only NGINX with TLS **v1.2 or v1.3** enabled.
 - [ ] **WordPress** container: install & configure WordPress with **php-fpm** only (no NGINX inside).
 - [ ] **MariaDB** container: run MariaDB only, without NGINX.
 - [ ] Ensure **two WordPress database users**, one being the administrator. The admin username **cannot contain** `admin`, `Admin`, `administrator`, etc.
 - [ ] Configure containers to **restart automatically** after a crash.
-- [ ] Avoid hacky patches like `tail -f` or infinite loops—learn how daemons and PID 1 work.
+- [ ] Avoid hacky patches like `tail -f` or infinite loops. Instead, follow **PID 1 best practices** for long-running services in Docker.
+
 
 ## Volumes
 
