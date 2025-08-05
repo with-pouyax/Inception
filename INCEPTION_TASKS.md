@@ -13,7 +13,7 @@
 - [ ] **One Dockerfile per service** – build the images yourself instead of pulling pre-made ones (only base Alpine/Debian images allowed).
 - [ ] Name each Docker image **exactly the same** as its service.
 - [ ] Base every image on the **penultimate stable version** of Alpine or Debian.
-- [ ] The Makefile must call `docker-compose`, which then builds images from your Dockerfiles.
+- [ ] The Makefile must call docker compose (with a space), which builds the images from your Dockerfiles.
 - [ ] Do not use the `latest` tag when specifying images.
 
 ## Service Containers
